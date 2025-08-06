@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* تحسين الخطوط العربية */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
+/* تأثيرات مخصصة */
+.animation-delay-500 {
+  animation-delay: 0.5s;
+}
+
+.animation-delay-1000 {
+  animation-delay: 1s;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* تحسينات إضافية للتجاوب */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* تأثير التمرير السلس */
+html {
+  scroll-behavior: smooth;
+}
+
+/* تحسين عرض النصوص الإنجليزية داخل النص العربي */
+.ltr-text {
+  direction: ltr;
+  display: inline-block;
+}
+
